@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="lib/handlebars-v4.0.2.js"></script>
+    <script type="application/javascript" src="script.js"></script>
+</head>
+<body>
+
+<!--This is our template. -->
+<!--Data will be inserted in its according place, replacing the brackets.-->
+<script id="address-template" type="text/x-handlebars-template">
+    {{#each students}}
+
+    <p>{{firstName}} {{lastName}}</p>
+
+    {{/each}}
+</script>
+
+<!--Your new content will be displayed in here-->
+<div class="content-placeholder"></div>
+
+</body>
+</html>
